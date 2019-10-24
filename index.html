@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	.box{
+  width:200px;
+  height:200px;
+  margin:100px;
+  background:red; 
+  border-radius: 20px;
+/*   transition-property:width;
+  transition-duration:0.5s;
+  trunsition-delay:0.3s;
+  transition-timing-function: ease; */
+/*   transition:width 0.5s ease 0.3s; */
+  animation: move  0.9s infinite alternate;
+  position: relative;
+}
+/* .box:hover{
+   background:blue;
+  width:200px;
+} */
+@keyframes move {
+  0% {
+    background:red;
+    transform:rotate(0);
+    width:200px;
+    top:0;
+    left:0;
+  }
+  50%{
+    background:yellow;
+    transform:rotate(180deg);
+    width:300px;
+    top:100px;
+    left: 200px;
+  }
+  100%
+  {
+    background:green;
+    transform:rotate(360deg);
+    width:400px;
+    top:100px;
+    left: 400px;
+  }
+}
+</style>
+<body>
+	 <div class="box"></div>
+</body>
+</html>
